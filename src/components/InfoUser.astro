@@ -1,0 +1,105 @@
+---
+import RedSocial from "./RedSocial.astro";
+
+const StyleSpan = "font-semibold text-yellow-200";
+
+
+---
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+  <div class="text-white flex gap-4 flex-col ">
+    <h1 class="font-black text-5xl">Andres Velasquez</h1>
+    <h4 class="font-bold text-xl text-yellow-300">
+      Future / Front - End Engineer
+    </h4>
+    <p class="max-w-96 text-secundario text-[17px]">
+      Diseño y creo experiencias digitales para la web, enfocándome en la
+      accesibilidad y en cada detalle de píxeles .
+    </p>
+    <div class="max-w-96 text-center flex flex-col gap-9">
+      <div class="container-img w-40 mx-auto overflow-hidden rounded-md bg-transparent">
+        <img class="w-full h-full object-cover" src="https://unavatar.io/github/mdo" alt="imagen de mi persona">
+      </div>
+      <RedSocial />
+    </div>
+  </div>
+  <div class="flex flex-col gap-3 justify-center">
+    <p class="text-secundario tracking-wide text-lg">
+      Soy un estudiante apasionado por el desarrollo web y futuro
+      <span class={StyleSpan}>front-end developer</span>.
+    </p>
+
+    <p class="text-secundario tracking-wide text-lg">
+      Disfruto transformando ideas en <span class={StyleSpan}
+        >interfaces atractivas</span
+      > y funcionales, mientras aprendo a dominar el arte de la <span
+        class={StyleSpan}>experiencia de usuario</span
+      >.
+    </p>
+
+    <p class="text-secundario tracking-wide text-lg">
+      Me inspiro en la <span class={StyleSpan}>simplicidad</span>, encuentro
+      belleza en el orden y nunca dejo de explorar nuevas formas de crear. En mi
+      tiempo libre, me encanta leer sobre tecnología y perderme en la música.
+    </p>
+
+    <p class="text-secundario tracking-wide text-lg">
+      Creo firmemente en el poder de la colaboración y el aprendizaje constante.
+      Me motiva <span class={StyleSpan}>trabajar en equipo</span> para superar desafíos
+      y alcanzar metas, siempre con el objetivo de crecer como profesional y persona.
+    </p>
+
+    <p class="text-secundario tracking-wide text-lg text-center font-semibold">
+      Estoy construyendo mi camino paso a paso, ¡y esto es solo el comienzo!
+    </p>
+    
+  </div>
+</section>
+
+<style>
+ 
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: #ffffff;
+    opacity: 1;
+}
+.container-img img {
+    animation: luz .7s   ease-in-out;
+}
+
+
+
+/* @keyframes efecto {
+   0%{
+    transform: rotateX(0deg);
+   }
+    30%{
+     transform: rotateY(40deg);
+    }
+    50%{
+     transform: rotatey(-40deg);
+    }
+    100%{
+     transform: rotateX(20deg);
+    }
+    
+} */
+@keyframes luz {
+  from {
+    opacity: 0;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate3d(0, 1, 0, 360deg); /* Rotación en un eje diagonal (x, y) */
+  }
+}
+
+
+
+
+
+</style>

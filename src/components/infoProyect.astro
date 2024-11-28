@@ -1,0 +1,30 @@
+---
+import { proyectos } from "./ListProyect.js";
+
+// Obtén el ID desde los parámetros de la URL
+
+const { searchParams } = new URL(Astro.request.url);
+const ID = parseInt(searchParams.get("id"), 10);
+
+// Filtra los proyectos según el ID
+function filterProyects(ID) {
+  return proyectos.find((proyect) => proyect.id === ID);
+}
+
+// Ejemplo de uso
+const proyectoSeleccionado = filterProyects(ID);
+
+console.log(proyectoSeleccionado); // Aquí tendrás el proyecto correspondiente al ID
+
+---
+
+<section>
+    <h1>{proyectoSeleccionado.nombre}</h1>
+    <!-- <p>{proyectoSelec}</p> -->
+    <ul>
+        {proyectoSeleccionado.tecnologias.map((tecnologia) => (
+        <li>{tecnologia}</li>
+        ))}
+    </ul>
+    <a href={proyectoSeleccionado.url} target="_blank">Ver Proyecto</a>
+</section>
