@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/navbar.astro';
 import InfoUser from '../components/InfoUser.astro';
 import ListaProyecto from '../components/ListaProyecto.astro';
+import Experiencia from '../components/Experiencia.astro';
 ---
 
 <Layout title=" Home | Andres Velasquez ">
@@ -12,13 +13,17 @@ import ListaProyecto from '../components/ListaProyecto.astro';
 	<main class="mx-auto   max-w-screen-xl  px-6  flex flex-col gap-28  lg:px-24  lg:mt-20  lg:pb-24 ">
 			<InfoUser  />
 			<!-- Experiencia slider info -->
+
 			<section class="flex flex-col gap-8">
-				<div class="inline-flex gap-3 items-center ">
-					<svg class="size-9 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
-					<h1 class="text-white text-4xl font-black">Proyectos</h1>
+				<div class="inline-flex gap-3 items-center text-white ">
+					<svg class="size-9 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
+					<h2 class="text-3xl font-bold">Proyectos</h2>
 				</div>
+			
 				<ListaProyecto  />
 			</section>
+			<Experiencia />
+
 	</main>
 </Layout>
 

@@ -9,11 +9,11 @@ import {IconoRenderizado} from "./iconos.jsx";
     proyectos.map((proyecto) => (
     <a href={`/InfoProye?id=${proyecto.id}`}  class="bg-transparent">
 
-      <div class="container-proyect w-[440px] h-[470px]  overflow-hidden relative  rounded-xl bg-black "   >
+      <div class="container-proyect w-[440px] h-[290px]  overflow-hidden relative  rounded-xl bg-black "   >
           <img class="object-cover w-full h-full rounded-lg filter grayscale-[40%]   "src={proyecto.imagenPortada} alt={proyecto.nombre} />
           {/* cuando se haga hover aparecera todo esta info */}
           <div class="container-info absolute z-20  bg-transparent h-full w-full inset-0 px-3  ">
-            <div class="subContainer-info translate-y-[310px]  lg:translate-y-[500px] flex flex-col gap-2 h-auto  ">
+            <div class="subContainer-info translate-y-[140px] px-5 lg:px-2  lg:translate-y-[500px] flex flex-col gap-2 h-auto  ">
 
             <h1 class="text-white text-2xl lg:text-3xl font-black">{proyecto.nombre}</h1>
             <p class=" text-[#edecec]">{proyecto.descripcionCorta}</p>
@@ -58,7 +58,7 @@ import {IconoRenderizado} from "./iconos.jsx";
     }
     .container-info:hover .subContainer-info{
       transition: all 0.6s ease-in-out;
-      transform: translateY(340px);
+      transform: translateY(160px);
 
     }
     @media screen and (max-width: 900px){

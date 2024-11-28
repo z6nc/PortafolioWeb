@@ -1,0 +1,51 @@
+---
+const Experienca = [
+{
+    title: "Frontend Developer",
+    company: "Freelancer",
+    date: "Actualmente...",
+    description:
+      "Desarrollo proyectos web personalizados como parte de mi portafolio personal. He trabajado en la creación de sitios interactivos utilizando tecnologías como Astro, React, Tailwind CSS y JavaScript, con un enfoque en la optimización de la experiencia del usuario y el rendimiento de la página.",
+  },
+
+];
+---
+
+<section>
+  <div class="text-white inline-flex gap-2 items-center pb-6">
+    <svg
+      class="size-8"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><path d="M0 0h24v24H0z" fill="none" stroke="none"></path><path
+        d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M12 12h0"
+      ></path><path d="M3 13a20 20 0 0 0 18 0"></path></svg
+    >
+    <h2 class="text-3xl font-bold">Experiencia Laboral</h2>
+  </div>
+  <article class="flex flex-col gap-7  border-l-1 border-white">
+    {
+      Experienca.reverse().map((exp) => (
+        <section class="flex flex-wrap gap-1 ">
+          <div class="pl-6 relative">
+            <span class="text-yellow-400 -left-[10px] absolute rounded-full text-5xl">
+              •
+            </span>
+            <h3 class="text-xl font-bold text-yellow-400">{exp.title}</h3>
+            <h4 class="text-xl font-semibold text-white">{exp.company}</h4>
+            <p class="text-secundario">{exp.date}</p>
+          </div>
+          <div class="lg:max-w-[50%] mx-auto">
+            <p class="text-secundario text-lg">{exp.description}</p>
+          </div>
+        </section>
+      ))
+    }
+  </article>
+</section>
