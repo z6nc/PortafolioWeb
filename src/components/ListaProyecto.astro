@@ -10,7 +10,9 @@ import {IconoRenderizado} from "./iconos.jsx";
     <a href={`/InfoProye?id=${proyecto.id}`}  class="w-[440px] h-[290px]     rounded-xl  ">
 
       <div class="container-proyect w-full h-full  overflow-hidden relative  "   >
-          <img class="object-cover w-full h-full rounded-lg filter grayscale-[40%]   "src={proyecto.imagenPortada} alt={proyecto.nombre} />
+        <video src={proyecto.imagenPortada}  class="object-cover w-full h-full filter grayscale-[40%] rounded-lg" autoplay muted loop >
+        </video>
+          {/* <img class="object-cover w-full h-full rounded-lg filter grayscale-[40%]   "src={proyecto.imagenPortada} alt={proyecto.nombre} /> */}
           {/* cuando se haga hover aparecera todo esta info */}
           <div class="container-info absolute z-20  bg-transparent h-full w-full inset-0 px-3  ">
             <div class="subContainer-info translate-y-[140px] px-5 lg:px-2  lg:translate-y-[500px] flex flex-col gap-2 h-auto  ">
@@ -45,7 +47,7 @@ import {IconoRenderizado} from "./iconos.jsx";
 
 <style>
    
-    .container-proyect:hover img{
+    .container-proyect:hover video{
         transition: all 0.3s ease-in-out;
         filter: grayscale(0%);
 
