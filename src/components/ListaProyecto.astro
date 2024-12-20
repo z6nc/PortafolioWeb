@@ -10,14 +10,14 @@ import {IconoRenderizado} from "./iconos.jsx";
     <a href={`/InfoProye?id=${proyecto.id}`}  class="w-[440px] h-[290px]     rounded-xl  ">
 
       <div class="container-proyect w-full h-full  overflow-hidden relative  "   >
-        <video src={proyecto.imagenPortada}  class="object-cover w-full h-full filter grayscale-[40%] rounded-lg" autoplay muted loop >
+        <video src={proyecto.imagenPortada}  class="object-cover w-full h-full brightness-[0.9] rounded-lg" autoplay muted loop >
         </video>
           {/* cuando se haga hover aparecera todo esta info */}
           <div class="container-info absolute z-20  bg-transparent h-full w-full inset-0 px-3  ">
-            <div class="subContainer-info translate-y-[140px] px-5 lg:px-2  lg:translate-y-[500px] flex flex-col gap-2 h-auto  ">
+            <div class="subContainer-info translate-y-[170px] px-5 lg:px-2  lg:translate-y-[500px] flex flex-col gap-2 h-auto  ">
 
-            <h1 class="text-white text-3xl lg:text-3xl tracking-wider font-Acme font-black">{proyecto.nombre}</h1>
-            <p class=" text-[#edecec]">{proyecto.descripcionCorta}</p>
+            <h1 class="text-white text-2xl  tracking-wide font-Concert  ">{proyecto.nombre}</h1>
+            <p class=" text-[#edecec] text-sm">{proyecto.descripcionCorta}</p>
             
                 <ul class="flex items-center gap-3 flex-wrap">
                     {

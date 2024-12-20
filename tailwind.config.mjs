@@ -11,7 +11,7 @@ export default {
 				'secundario': '#e4e3e3',
 			},
 			fontFamily: {
-				'Acme': ['Acme', 'sans-serif'],
+				'Concert': ['Luckiest Guy', 'sans-serif'],
 			},
 		},
 	},
