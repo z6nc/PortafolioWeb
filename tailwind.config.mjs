@@ -10,6 +10,9 @@ export default {
 			colors: {
 				'secundario': '#e4e3e3',
 			},
+			fontFamily: {
+				'Acme': ['Acme', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

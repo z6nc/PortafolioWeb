@@ -7,9 +7,8 @@ import Experiencia from '../components/Experiencia.astro';
 ---
 
 <Layout title=" Home | Andres Velasquez ">
-	<header class="" >
+	<header  >
 		<Navbar />
-	</header>
 	<main class="mx-auto   max-w-screen-xl  px-6  flex flex-col gap-28  lg:px-24  lg:mt-20  lg:pb-24 ">
 			<InfoUser  />
 			<section id="C-Proyectos" class="flex flex-col gap-8">
@@ -17,11 +16,16 @@ import Experiencia from '../components/Experiencia.astro';
 					<svg class="size-9 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
 					<h2 class="text-3xl font-bold">Proyectos</h2>
 				</div>
-			
+				
 				<ListaProyecto  />
 			</section>
-			<Experiencia />
+			<section id="Experiencia">
+
+				<Experiencia />
+			</section>
 
 	</main>
+</header>
+
 </Layout>
 

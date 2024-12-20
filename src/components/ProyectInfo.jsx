@@ -3,6 +3,22 @@ import { proyectos } from "./ListProyect.js";
 import {IconoRenderizado} from "./iconos.jsx";
 import { PageCarga } from "./pageCarga.jsx";
 
+const tecnologias  = (
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  strokeWidth={1.5}
+  stroke="currentColor"
+  className="size-5 "
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+  />
+</svg>
+)
 
 export function ProyectInfo() {
   const [proyecto, setProyecto] = useState(null);
@@ -44,21 +60,7 @@ export function ProyectInfo() {
                 {/* contenedor de tecnoligas y website */}
                   <article className="flex flex-col gap-4 ">
                     <div className="inline-flex items-center gap-2 ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="size-5 "
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
-                        />
-                      </svg>
-
+                      {tecnologias}
                       <h4 className="text-white text-lg lg:text-xl font-bold ">
                         Tecnologias
                       </h4>
