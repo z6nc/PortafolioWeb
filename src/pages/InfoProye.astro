@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/navbar.astro';
 import {ProyectInfo} from '../components/ProyectInfo.jsx';
+import Footer from '../components/footer.astro';
+
 ---
 
 
@@ -12,5 +14,6 @@ import {ProyectInfo} from '../components/ProyectInfo.jsx';
 	<main class="mx-auto  max-w-screen-xl px-6   lg:px-24  lg:mt-16 lg:pb-24 ">
          <ProyectInfo client:load />
 	</main>
+	<Footer/>
 </Layout>
 
