@@ -75,22 +75,22 @@ export function ProyectInfo() {
         <PageCarga />
       ) : (
         <>
-          <div className="text-secundario flex flex-col gap-6 justify-center ">
-            <div className="inline-flex items-center justify-between ">
-              <h1 className=" tracking-wide font-Concert text-3xl lg:text-5xl text-gray-100  text-center lg:text-start ">
+          <div className="text-secundario flex flex-col gap-6 justify-center animate-blurred-fade-in ">
+            <div className="inline-flex items-center justify-between">
+              <h1 className=" tracking-wide font-Concert text-3xl lg:text-4xl text-gray-100  text-center lg:text-start  ">
                 {proyecto.nombre}
               </h1>
               <a
                 href={proyecto.LinkCode}
                 target="_blank"
-                className={`hover:text-yellow-300 animate-pulse  ${StyleStar}`}
+                className={`hover:text-yellow-300 hover:animate-tada ${StyleStar}`}
                 onClick={() => setClikStar(!ClikStar)}
               >
                 {StarSvg}
               </a>
             </div>
-            <section className="flex flex-wrap items-center gap-3 ">
-              <div className="w-full h-[30vh]  lg:h-auto">
+            <section className="flex flex-wrap items-center gap-5 ">
+              <div className="w-full h-[30vh]  lg:h-auto lg:animate-flip-in-y">
                 <video
                   className="rounded-md brightness-[0.9] w-full h-full object-cover"
                   src={proyecto.imagenPortada}
@@ -99,18 +99,19 @@ export function ProyectInfo() {
                 ></video>
               </div>
               <div className="flex flex-col gap-5 ">
-                <div className="flex flex-col gap-2">
-                  <h4 className="text-xl lg:text-3xl text-white  font-bold ">
+                <div className="flex flex-col gap-2 py-4 ">
+                  <h4 className="text-xl lg:text-3xl text-white uppercase font-Concert">
                     About
                   </h4>
                   <p className="">{proyecto.descripcionLarga}</p>
                 </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-center justify-center ">
                 {/* contenedor de tecnoligas y website */}
-                <article className="flex flex-col gap-4 ">
+                <article className="flex flex-col gap-4     lg:items-center lg:border-r-1  ">
                   <div className="inline-flex items-center gap-2 ">
                     {tecnologias}
-                    <h4 className="text-white text-lg lg:text-xl font-bold ">
-                      Tecnologias
+                    <h4 className="text-white text-lg lg:text-xl font-Concert ">
+                      TECNOLOGIAS
                     </h4>
                   </div>
                   <ul className="flex  flex-wrap   gap-3">
@@ -122,11 +123,11 @@ export function ProyectInfo() {
                   </ul>
                 </article>
                 {/* section  website  */}
-                <article className="flex flex-col gap-4  ">
+                <article className="flex flex-col gap-4    lg:items-center  ">
                   <div className="inline-flex gap-2 items-center ">
                     {WebSvg}
-                    <h4 className="text-white text-lg lg:text-xl font-bold  ">
-                      WebSite
+                    <h4 className="text-white text-lg lg:text-xl  font-Concert ">
+                      WEBSITE
                     </h4>
                   </div>
 
@@ -138,13 +139,17 @@ export function ProyectInfo() {
                     {proyecto.webSite}
                   </a>
                 </article>
+
+                </div>
+
+
                 <a
                   href={proyecto.webSite}
                   target="_blank"
-                  className="bg-orange-500 py-3 rounded-md border-b-8 border-orange-800   hover:bg-orange-600  text-center"
+                  className="bg-orange-600 py-3 rounded-md border-b-8 border-orange-800   hover:bg-orange-500  text-center mt-7 hover:animate-tilt"
                 >
-                  <span className="text-xl text-gray-300  uppercase font-Concert">
-                    Ver Website
+                  <span className="text-lg lg:text-xl text-gray-300   font-Concert uppercase">
+                    Visitar Sitio
                   </span>
                 </a>
               </div>

@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import animations from '@midudev/tailwind-animations'
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	
 	theme: {
 		extend: {
 			borderWidth: {
@@ -11,9 +13,10 @@ export default {
 				'secundario': '#e4e3e3',
 			},
 			fontFamily: {
-				'Concert': ['Luckiest Guy', 'sans-serif'],
+				'Concert': ['Fugaz One', 'cursive'],
 			},
+			
 		},
 	},
-	plugins: [],
+	plugins: [animations],
 }
