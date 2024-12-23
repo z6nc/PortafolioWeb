@@ -93,10 +93,17 @@ export function ProyectInfo() {
               <div className="w-full h-[30vh]  lg:h-auto lg:animate-flip-in-y">
                 <video
                   className="rounded-md brightness-[0.9] w-full h-full object-cover"
-                  src={proyecto.imagenPortada}
-                  autoPlay={true}
-                  muted={true}
-                ></video>
+                  autoPlay
+                  muted
+                >
+                  {proyecto.imagenPortada && (
+                    <source src={proyecto.imagenPortada} type="video/mp4" />
+                  )}
+                  {proyecto.videoWebm && (
+                    <source src={proyecto.videoWebm} type="video/webm" />
+                  )}
+                  <p>Tu navegador no soporta videos.</p>
+                </video>
               </div>
               <div className="flex flex-col gap-5 ">
                 <div className="flex flex-col gap-2 py-4 ">
@@ -106,49 +113,47 @@ export function ProyectInfo() {
                   <p className="">{proyecto.descripcionLarga}</p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-center justify-center ">
-                {/* contenedor de tecnoligas y website */}
-                <article className="flex flex-col gap-4     lg:items-center lg:border-r-1  ">
-                  <div className="inline-flex items-center gap-2 ">
-                    {tecnologias}
-                    <h4 className="text-white text-lg lg:text-xl font-Concert ">
-                      TECNOLOGIAS
-                    </h4>
-                  </div>
-                  <ul className="flex  flex-wrap   gap-3">
-                    {proyecto.tecnologias.map((tecnologia, index) => (
-                      <li className="text-sm py-1 px-3     " key={index}>
-                        <IconoRenderizado nombre={tecnologia} />
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-                {/* section  website  */}
-                <article className="flex flex-col gap-4    lg:items-center  ">
-                  <div className="inline-flex gap-2 items-center ">
-                    {WebSvg}
-                    <h4 className="text-white text-lg lg:text-xl  font-Concert ">
-                      WEBSITE
-                    </h4>
-                  </div>
+                  {/* contenedor de tecnoligas y website */}
+                  <article className="flex flex-col gap-4     lg:items-center lg:border-r-1  ">
+                    <div className="inline-flex items-center gap-2 ">
+                      {tecnologias}
+                      <h4 className="text-white text-lg lg:text-xl font-Concert ">
+                        TECNOLOGIAS
+                      </h4>
+                    </div>
+                    <ul className="flex  flex-wrap   gap-3">
+                      {proyecto.tecnologias.map((tecnologia, index) => (
+                        <li className="text-sm py-1 px-3     " key={index}>
+                          <IconoRenderizado nombre={tecnologia} />
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                  {/* section  website  */}
+                  <article className="flex flex-col gap-4    lg:items-center  ">
+                    <div className="inline-flex gap-2 items-center ">
+                      {WebSvg}
+                      <h4 className="text-white text-lg lg:text-xl  font-Concert ">
+                        WEBSITE
+                      </h4>
+                    </div>
 
-                  <a
-                    className="underline font-semibold text-yellow-200"
-                    href={proyecto.webSite}
-                    target="_blank"
-                  >
-                    {proyecto.webSite}
-                  </a>
-                </article>
-
+                    <a
+                      className="underline font-semibold text-yellow-200"
+                      href={proyecto.webSite}
+                      target="_blank"
+                    >
+                      {proyecto.webSite}
+                    </a>
+                  </article>
                 </div>
-
 
                 <a
                   href={proyecto.webSite}
                   target="_blank"
                   className="bg-orange-600 py-3 rounded-md border-b-8 border-orange-800   hover:bg-orange-500  text-center mt-7 hover:animate-tilt"
                 >
-                  <span className="text-lg lg:text-xl text-gray-300   font-Concert uppercase">
+                  <span className="text-base lg:text-xl text-gray-300   font-Concert uppercase">
                     Visitar Sitio
                   </span>
                 </a>
