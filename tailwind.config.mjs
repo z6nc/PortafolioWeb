@@ -15,6 +15,9 @@ export default {
 			fontFamily: {
 				'Concert': ['Fugaz One', 'cursive'],
 			},
+			dropShadow: {
+				'5xl': '0 55px 9px  #fde047',
+			},
 			
 		},
 	},

@@ -5,10 +5,11 @@ import InfoUser from '../components/InfoUser.astro';
 import ListaProyecto from '../components/ListaProyecto.astro';
 import Experiencia from '../components/Experiencia.astro';
 import Footer from '../components/footer.astro';
+import EmailStar from '../components/EmailStar.astro';
 ---
 
 <Layout title=" Home | Andres Velasquez ">
-	<header class="animate-blurred-fade-in"  >
+	<header class="animate-blurred-fade-in relative"  >
 		<Navbar />
 	<main class="mx-auto   max-w-screen-xl  px-6  flex flex-col gap-28  lg:px-24  lg:mt-20  lg:pb-24 ">
 			<InfoUser  />
@@ -27,7 +28,10 @@ import Footer from '../components/footer.astro';
 			
 		</main>
 		<Footer/>
+		<EmailStar/>
 </header>
+
+
 
 </Layout>
 
