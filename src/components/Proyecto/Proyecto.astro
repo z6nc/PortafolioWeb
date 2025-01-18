@@ -1,0 +1,13 @@
+---
+import {ListaProyecto} from './ListaProyecto';
+import { IconProyect } from '../icon/iconProyect';
+import { proyectos } from '../ListProyect';
+---
+<section  class="flex flex-col gap-8 ">
+    <div class="inline-flex gap-3 items-center text-white justify-center text-center ">
+        <IconProyect estilo={"size-7 hidden lg:block"} />
+        <h2 class="text-2xl font-Montserrat font-black">PROYECTOS PRINCIPALES</h2>
+    </div>
+    
+    <ListaProyecto Proyectos={proyectos} limit={3} />
+</section>

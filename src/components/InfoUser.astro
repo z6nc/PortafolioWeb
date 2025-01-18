@@ -1,74 +1,23 @@
 ---
-import RedSocial from "./RedSocial.astro";
-
-const StyleSpan = " text-yellow-200 font-Concert tracking-wide";
-
-
+import { RedSocial } from "./RedSocial/RedSocial";
+import { Logo } from "./icon/logo";
+import BotonDispo from "../components/About/BotonDispo.astro";
 ---
 
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8   ">
-  <div class="text-white flex gap-4 flex-col animate-fade-in-right ">
-    <h1 class=" text-5xl text-center lg:text-start font-Concert">Andres Velasquez</h1>
-    <h4 class=" text-xl text-yellow-300 font-Concert">
-      Future / Front - End Engineer
+<section class="flex justify-center lg:h-[70dvh] flex-col text-white gap-y-4 items-center font-Montserrat animate-fade-in-up text-center">
+ 
+    <Logo styleLogo={"w-72 lg:w-80"} />
+    <h1 class="text-3xl lg:text-5xl  font-bold uppercase">
+      Andres Velasquez
+    </h1>
+    <h4 class="text-lg lg:text-xl text-yellow-200  font-bold">
+      Front - End Engineer
     </h4>
-    <p class="max-w-96 text-secundario  lg:text-[17px]">
+    <p class="max-w-3xl text-secundario text-base lg:text-lg mx-auto  text-center">
       Diseño y creo experiencias digitales para la web, enfocándome en la
       accesibilidad y en cada detalle de píxeles .
     </p>
-    <div class="max-w-96 text-center flex flex-col gap-9">
-      <div class="container-img w-48 mx-auto overflow-hidden rounded-md bg-transparent ">
-        <img class="w-full h-full object-cover" src="https://res.cloudinary.com/dleem7osr/image/upload/v1734623832/ImagenMine-removebg-preview_cuc27v.png" alt="imagen de mi persona">
-      </div>
-      <RedSocial />
-    </div>
-  </div>
-  <div class="flex flex-col gap-3 justify-center lg:text-lg animate-fade-in-left">
-    <p class="text-secundario tracking-wide ">
-      Soy un estudiante apasionado por el desarrollo web y futuro
-      <span class={StyleSpan}>front-end developer</span>.
-    </p>
 
-    <p class="text-secundario tracking-wide  ">
-      Disfruto transformando ideas en <span class={StyleSpan}
-        >interfaces atractivas</span
-      > y funcionales, mientras aprendo a dominar el arte de la <span
-        class={StyleSpan}>experiencia de usuario</span
-      >.
-    </p>
-
-    <p class="text-secundario tracking-wide  ">
-      Me inspiro en la <span class={StyleSpan}>simplicidad</span>, encuentro
-      belleza en el orden y nunca dejo de explorar nuevas formas de crear. En mi
-      tiempo libre, me encanta leer sobre tecnología y perderme en la música.
-    </p>
-
-    <p class="text-secundario tracking-wide  ">
-      Creo firmemente en el poder de la colaboración y el aprendizaje constante.
-      Me motiva <span class={StyleSpan}>trabajar en equipo</span> para superar desafíos
-      y alcanzar metas, siempre con el objetivo de crecer como profesional y persona.
-    </p>
-
-    <p class="text-secundario tracking-wide   text-center  font-Concert">
-      Estoy construyendo mi camino paso a paso, ¡y esto es solo el comienzo!
-    </p>
-    
-  </div>
+    <RedSocial />
+    <BotonDispo />
 </section>
-
-<style>
- 
-
-.arrow-icon {
-    width: 20px;
-    height: 20px;
-    fill: none;
-    stroke: #ffffff;
-    opacity: 1;
-}
-
-
-
-
-
-</style>

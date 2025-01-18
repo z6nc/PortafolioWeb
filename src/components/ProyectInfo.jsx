@@ -57,16 +57,14 @@ export function ProyectInfo() {
   const TrueStar = " text-yellow-300  ";
   const StyleStar = ClikStar ? TrueStar : "fill-current";
   useEffect(() => {
-    // Obtén el ID desde los parámetros de la URL
     const urlParams = new URLSearchParams(window.location.search);
     const ID = parseInt(urlParams.get("id"), 10);
 
     if (!isNaN(ID)) {
-      // Busca el proyecto correspondiente
       const encontrado = proyectos.find((proyecto) => proyecto.id === ID);
       setProyecto(encontrado);
     } else {
-      console.error("ID no válido");
+      alert("No se encontro el proyecto");
     }
   }, []);
   return (
@@ -123,8 +121,8 @@ export function ProyectInfo() {
                     </div>
                     <ul className="flex  flex-wrap   gap-3">
                       {proyecto.tecnologias.map((tecnologia, index) => (
-                        <li className="text-sm py-1 px-3     " key={index}>
-                          <IconoRenderizado nombre={tecnologia} />
+                        <li className="text-sm py-1 px-3 " key={index}>
+                          <IconoRenderizado nombre={tecnologia} classe={"size-6"} />
                         </li>
                       ))}
                     </ul>

@@ -2,8 +2,8 @@ export const proyectos =
 [
     {
         id: 1,
-        nombre: "ENERGIX",
-        descripcionCorta: "Proyecto de tienda online de bebidas",
+        nombre: "EnergiX",
+        descripcionCorta: "Tienda de bebidas online Creada con React , Astro , talwindcss , cloudinary e imagenes generadas con IA."  ,
         descripcionLarga: "Energix es una web creada para mostrar bebidas de diversas categorías, ofreciendo una experiencia sencilla e intuitiva. Todas las imágenes fueron generadas con inteligencia artificial, dando un toque creativo al proyecto. Es una plataforma desarrollada desde cero con un enfoque práctico y funcional.",
         tecnologias: ["Astro", "React", "TailwindCSS"],
         webSite: "https://web-drinks-shop.vercel.app",
@@ -15,8 +15,8 @@ export const proyectos =
     
     {
         id: 2,
-        nombre: "LABOIDEAS",
-        descripcionCorta: "Plataforma de miniproyectos en JavaScript",
+        nombre: "LaboIdeas",
+        descripcionCorta: "Plataforma de miniproyectos desarrollada con JavaScript.",
         descripcionLarga: "Laboratorio de Ideas es una plataforma web creada para desarrollar miniproyectos prácticos y rápidos en JavaScript. Actualmente, ofrece 5 proyectos destacados, como BlackJack, CalcuPropina y TestimonyCard, entre otros, cada uno acompañado de su descripción detallada y código fuente.",
         tecnologias: ["Astro", "JavaScript", "TailwindCSS"],
         webSite: "https://lab-inspira.vercel.app",
@@ -28,8 +28,8 @@ export const proyectos =
     
     {
         id: 3,
-        nombre: "CODEMASTER JS ",
-        descripcionCorta: "Plataforma educativa de JavaScript",
+        nombre: "Codemaster JS ",
+        descripcionCorta: "Plataforma educativa para aprender JavaScript de forma práctica con ejercicios y soluciones.",
         descripcionLarga: "CodeMasterJS es una plataforma educativa diseñada para aprender JavaScript de forma práctica mediante desafíos y problemas, esta plataforma destaca por ofrecer múltiples soluciones para cada problema, demostrando que en la programación existen diversas maneras de abordar un desafío.",
         tecnologias: ["Astro", "JavaScript", "TailwindCSS"],
         webSite: "https://code-master-js.vercel.app",
