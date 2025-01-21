@@ -16,7 +16,7 @@ export const RedesIcon = [
   },
   {
     nombre: "LinkendIn",
-    link : "https://github.com/z6nc",
+    link : "https://www.linkedin.com/in/andres1234/",
     icono: ({style}) => (
       <svg
         className={style}
@@ -33,7 +33,7 @@ export const RedesIcon = [
   },
   {
     nombre: "Instagram",
-    link : "https://github.com/z6nc",
+    link : "https://www.linkedin.com/in/andres1234/",
     icono: ({style}) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export const RedesIcon = [
   },
   {
     nombre: "Youtube",
-    link : "https://github.com/z6nc",
+    link : "https://www.linkedin.com/in/andres1234/",
     icono: ({style}) => (
       <svg
         viewBox="0 0 256 180"

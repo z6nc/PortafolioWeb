@@ -1,0 +1,17 @@
+---
+import { IconQuestion } from "../icon/iconQuestion";
+import {ComponentesPreguntas} from "../Preguntas/ComPreguntas";
+---
+
+<section
+  class="font-Montserrat flex flex-col gap-y-9 items-center justify-center"
+>
+  <div class="text-white inline-flex gap-2 items-center text-center">
+    <IconQuestion styleIcon={"size-7 hidden lg:block "} />
+    <h2 class="text-2xl font-black">PREGUNTAS FRECUENTES</h2>
+  </div>
+
+  <!-- Inforamcion Trabajo -->
+   <ComponentesPreguntas client:only/>
+ 
+</section>

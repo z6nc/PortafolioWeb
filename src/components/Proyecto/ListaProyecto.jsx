@@ -7,6 +7,7 @@ export function ListaProyecto({ Proyectos , limit}) {
         {Proyectos.slice(0,limit).map((proyecto) => (
           <a
             href={`/InfoProye?id=${proyecto.id}`}
+            key={proyecto.id}
             className="rounded-xl flex flex-col justify-between bg-white/5 w-[350px] 2xl:w-[480px]  "
           >
             {/* Imagen / video de los proyectos  */}
@@ -14,7 +15,8 @@ export function ListaProyecto({ Proyectos , limit}) {
               <video
                 src={proyecto.imagenPortada}
                 className="object-cover w-full h-full brightness-[0.9]"
-                autoplay
+                autoPlay  
+                muted 
                 loop
               >
                 {proyecto.imagenPortada && (
