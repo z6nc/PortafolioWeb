@@ -17,9 +17,9 @@ export function ComponentesPreguntas() {
           <button
             onClick={() => togglePregunta(index)}
             key={pregunta.id}
-            className=" cursor-pointer w-[80dvh] text-start space-y-1 overflow-hidden rounded-lg bg-blue-950/45  border-l-2 border-gray-400"
+            className=" cursor-pointer mx-auto w-[40vh] lg:w-[90vh] text-start space-y-1 overflow-hidden rounded-lg bg-blue-950/45  border-l-2 border-gray-400"
           >
-            <div className="flex justify-between font-medium items-center px-3 py-5 rounded-lg bg-transparent/30">
+            <div className="flex justify-between font-medium items-center px-4 py-5 rounded-lg bg-transparent/30">
               <h2>{pregunta.pregunta}</h2>
               <div
                 className={` transition-transform duration-300 ${
@@ -31,7 +31,7 @@ export function ComponentesPreguntas() {
             </div>
 
             {isActive && (
-              <div className="  text-gray-300 px-3 py-4 rounded-lg animate-fade-in">
+              <div className=" text-sm tracking-wide  text-gray-300 px-4 py-4 rounded-lg animate-fade-in">
                 {pregunta.respuesta}
               </div>
             )}
