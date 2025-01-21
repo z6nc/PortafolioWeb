@@ -13,7 +13,6 @@ export default {
 				'secundario': '#e4e3e3',
 			},
 			fontFamily: {
-				'Concert': ['Fugaz One', 'cursive'],
 				'Montserrat': ['Montserrat', 'sans-serif'],
 			},
 

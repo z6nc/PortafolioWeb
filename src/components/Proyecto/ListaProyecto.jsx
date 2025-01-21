@@ -8,10 +8,10 @@ export function ListaProyecto({ Proyectos , limit}) {
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
-            className="rounded-xl flex flex-col justify-between bg-white/5 w-[350px] 2xl:w-[480px]  "
+            className="rounded-xl flex flex-col bg-white/5 w-[350px] 2xl:w-[480px] overflow-hidden h-[500px] "
           >
             {/* Imagen / video de los proyectos  */}
-            <div className=" w-full h-64 2xl:h-64 overflow-hidden  rounded-md ">
+            <div className=" w-full h-64   rounded-md ">
               <video
                 src={proyecto.imagenPortada}
                 className="object-cover w-full h-full brightness-[0.9]"

@@ -1,8 +1,8 @@
 export const RedesIcon = [
   {
     nombre: "Github",
-    link : "https://github.com/z6nc",
-    icono: ({style}) => (
+    link: "https://github.com/z6nc",
+    icono: ({ style }) => (
       <svg
         viewBox="0 0 256 250"
         className={style}
@@ -16,8 +16,8 @@ export const RedesIcon = [
   },
   {
     nombre: "LinkendIn",
-    link : "https://www.linkedin.com/in/andres1234/",
-    icono: ({style}) => (
+    link: "https://www.linkedin.com/in/andres1234/",
+    icono: ({ style }) => (
       <svg
         className={style}
         xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@ export const RedesIcon = [
   },
   {
     nombre: "Instagram",
-    link : "https://www.linkedin.com/in/andres1234/",
-    icono: ({style}) => (
+    link: "https://www.linkedin.com/in/andres1234/",
+    icono: ({ style }) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={style}
@@ -50,8 +50,8 @@ export const RedesIcon = [
   },
   {
     nombre: "Youtube",
-    link : "https://www.linkedin.com/in/andres1234/",
-    icono: ({style}) => (
+    link: "https://www.linkedin.com/in/andres1234/",
+    icono: ({ style }) => (
       <svg
         viewBox="0 0 256 180"
         className={style}
@@ -63,6 +63,38 @@ export const RedesIcon = [
           fill="red"
         />
         <path fill="#FFF" d="m102.421 128.06 66.328-38.418-66.328-38.418z" />
+      </svg>
+    ),
+  },
+  {
+    nombre: "Gmail",
+    link: "mailto:andresvelasquezarotinco.com",
+    icono: ({ style }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 49.4 512 399.4"
+       className={style}
+      >
+        <g fill="none" fill-rule="evenodd">
+          <g fill-rule="nonzero">
+            <path
+              fill="#4285f4"
+              d="M35 449h81V251L0 164v250c0 19 16 35 35 35z"
+            />
+            <path
+              fill="#34a853"
+              d="M396 449h81c19 0 35-16 35-35V164l-116 87z"
+            />
+            <path
+              fill="#fbbc04"
+              d="M396 100v151l116-87v-47c0-43-49-68-84-42z"
+            />
+          </g>
+          <path fill="#ea4335" d="M116 251V100l140 104 140-104v151L256 356z" />
+          <path
+            fill="#c5221f"
+            fill-rule="nonzero"
+            d="M0 117v47l116 87V100L84 75C49 49 0 74 0 117z"
+          />
+        </g>
       </svg>
     ),
   },
