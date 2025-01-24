@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/Navbar/navbar';
+import Footer from '../components/footer.astro';
+import AboutHeader from '../components/About/AboutHeader.astro';
+import AboutContent from '../components/About/AboutContent.astro';
+
+---
+
+
+<Layout title=" Info | Andres Velasquez ">
+	<header class="relative ">
+		<Navbar client:idle />
+		<main class="mx-auto  max-w-screen-xl    lg:px-24  lg:mt-16 lg:pb-24 font-Montserrat ">
+            <AboutHeader  />
+			<AboutContent />
+            <!-- About mi  -->
+		</main>
+	</header>
+	<!-- <Footer/> -->
+</Layout>
+

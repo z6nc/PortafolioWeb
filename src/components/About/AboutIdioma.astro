@@ -1,0 +1,29 @@
+---
+import { object, objectUtil } from "astro:schema"
+
+const Idiomas =[
+{
+    nombre : "Español",
+    PaisImg :"https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3VWSU4BLXNBNTD4GHZIJR53XWI.jpg",
+    nivel :"Nativo",
+},
+{
+    nombre : "Ingles",
+    PaisImg :"https://banderas.top/wp-content/uploads/2020/07/USA-flag-28-estados.png",
+    nivel :"Intermedio"
+}
+]
+
+---
+<div class="row-span-2 col-span-2 border-1 border-gray-600 bg-transparent/35 p-5 rounded-lg">
+    <h3 class="text-white font-black uppercase ">Idiomas</h3>
+    <ul class="flex flex-wrap gap-2 pt-3">
+        {Idiomas.map((idioma) => (
+          <li class="inline-flex  space-x-2 items-center text-[11px]   px-3   py-2 rounded-lg  border-1 border-gray-700 text-gray-300 font-bold">
+              <img class="size-5" src={idioma.PaisImg} alt="">
+            <p>{idioma.nombre}</p> 
+            <span>{idioma.nivel}</span>
+          </li>
+        ))}
+       </ul>
+</div>

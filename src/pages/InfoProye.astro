@@ -8,8 +8,8 @@ import Footer from '../components/footer.astro';
 
 
 <Layout title=" Info | Andres Velasquez ">
-	<header class="">
-		<Navbar />
+	<header class="relative">
+		<Navbar client:idle />
 		<main class="mx-auto  max-w-screen-xl px-6   lg:px-24  lg:mt-16 lg:pb-24 ">
 			<ProyectInfo client:load />
 		</main>

@@ -18,7 +18,10 @@ export default {
 
 			dropShadow: {
 				'5xl': '0 55px 9px  #fde047',
+				'Titulo' :'1px 6px 1px #686867',
+				'logo' : '1px 7px 20px #f8c006'
 			},
+			
 			
 		},
 	},

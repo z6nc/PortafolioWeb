@@ -1,4 +1,4 @@
-const iconos = [
+export const iconos = [
   {
     nombre: "Astro",
     icono: ({classe = "size-4"}) => (
