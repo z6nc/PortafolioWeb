@@ -1,26 +1,41 @@
-export const Certificaciones = [
+// Constantes para logos de empresas
+const LOGOS = {
+    HackerMentor: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/3498375/settings_images/a7868b-cf5-c3d-854c-d58ee5dd5be2_HM_000.png",
+    AluraLatam: "https://www.aluracursos.com/assets/img/home/alura-logo.1730889068.svg",
+  };
+  
+  export const certifications = [
     {
-        id: 1,
-        empresa: "HackerMentor",
-        año: "2022",
-        descripcion: "Curso Gratuito Hacking ético Gamificado HACKLAB",
-        certificadoImg : "https://media.licdn.com/dms/image/v2/D4E0BAQHz-XHQ8ElZfA/company-logo_200_200/company-logo_200_200/0/1713385450325?e=1745452800&v=beta&t=NTpgZS9P1l9mR1oABy9JdP8Jee0L6M-HDHNG2vXS8Mg",
-        url :"https://credsverse.com/credentials/6cb67551-cae9-426f-a1a1-2c7a11df693a"
+      id: 1,
+      company: "HackerMentor",
+      year: 2022,
+      description: "Curso Gratuito Hacking ético Gamificado HACKLAB",
+      logo: LOGOS.HackerMentor,
+      url: "https://credsverse.com/credentials/6cb67551-cae9-426f-a1a1-2c7a11df693a",
     },
     {
-        id: 2,
-        empresa: "Alura Latam",
-        año: "2022",
-        descripcion: "Lógica de programación: sumérgete en la programación con JavaScript",
-        certificadoImg : "https://media.licdn.com/dms/image/v2/D4D0BAQGxDpCf6Cm0xQ/company-logo_200_200/company-logo_200_200/0/1701180993504/alura_latam_logo?e=1745452800&v=beta&t=080MLsiYAy5H-rk0pftunRgOY3owKKo2WJc5qJU7Hog",
-        url :"https://app.aluracursos.com/certificate/1c33041b-2532-4fe9-a942-aad3e3416d3c"
+      id: 2,
+      company: "Alura Latam",
+      year: 2025,
+      description: "Lógica de programación: sumérgete en la programación con JavaScript",
+      logo: LOGOS.AluraLatam,
+      url: "https://app.aluracursos.com/certificate/1c33041b-2532-4fe9-a942-aad3e3416d3c",
     },
     {
-        id: 3,
-        empresa: "HackerMentor",
-        año: "2022",
-        descripcion: "Curso Gratuito Hacking ético Gamificado HACKLAB",
-        certificadoImg : "https://media.licdn.com/dms/image/v2/D4E0BAQHz-XHQ8ElZfA/company-logo_200_200/company-logo_200_200/0/1713385450325?e=1745452800&v=beta&t=NTpgZS9P1l9mR1oABy9JdP8Jee0L6M-HDHNG2vXS8Mg",
-        url :"https://credsverse.com/credentials/6cb67551-cae9-426f-a1a1-2c7a11df693a"
+      id: 3,
+      company: "Alura Latam",
+      year: 2025,
+      description: "Practicando Lógica de Programación: Challenge Amigo secreto",
+      logo: LOGOS.AluraLatam,
+      url: "https://z6nc.github.io/Challenge-AmigoSecreto/",
     },
-]
+    {
+      id: 4,
+      company: "Alura Latam",
+      year: 2025,
+      description: "Git y GitHub: repositorio, commit y versiones",
+      logo: LOGOS.AluraLatam,
+      url: "https://app.aluracursos.com/certificate/6b5ab413-b6e9-4782-9462-f889055daf19",
+    },
+  ];
+  

@@ -9,19 +9,19 @@ export function ComCertificado({ Certificaciones, limit }) {
           target="_blank"
         >
           <img
-            src={certificacion.certificadoImg}
-            alt={certificacion.empresa}
-            className="w-11 h-full rounded-lg "
+            src={certificacion.logo}
+            alt={certificacion.company}
+            className="w-10 h-full rounded-md "
             loading="lazy"
           />
 
           <div >
-            <h3 className=" font-bold">{certificacion.empresa}</h3>
+            <h3 className=" font-bold">{certificacion.company}</h3>
             <p className="  text-sm  text-gray-400 w-60 lg:w-96  truncate ">
-              {certificacion.descripcion}
+              {certificacion.description}
             </p>
             <p className="text-yellow-400/85 inline-block px-4 py-1  mt-2 rounded-lg bg-yellow-400/10 text-xs font-black tracking-widest">
-              {certificacion.año}
+              {certificacion.year}
             </p>
           </div>
         </a>
