@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Navbar } from "../components/Navbar/navbar";
+import Footer from "../components/footer.astro";
+import { ListaProyecto } from "../components/Proyecto/ListaProyecto";
+import { proyectos } from "../components/ListProyect";
+import { IconProyect } from "../components/icon/iconProyect";
+---
+
+<Layout title=" MisProyectos | Andres Velasquez ">
+  <header class="relative">
+    <Navbar client:idle />
+    <main class="mx-auto px-6 lg:px-24 lg:mt-16 lg:pb-24">
+      <div
+        class="w-full inline-flex gap-3 items-center justify-center text-center pb-8 text-white"
+      >
+        <IconProyect estilo={"size-7 hidden lg:block"} />
+        <h2 class="text-2xl font-Montserrat font-black">
+          PROYECTOS PRINCIPALES
+        </h2>
+      </div>
+      <ListaProyecto client:load Proyectos={proyectos} limit={10} />
+    </main>
+  </header>
+  <Footer />
+</Layout>

@@ -1,11 +1,23 @@
-<div class="row-span-6 col-span-3  break-words border-1 border-gray-600 bg-transparent/35 p-5 rounded-lg">
-  <h3 class="text-white font-black uppercase text-lg ">Informacion Extra</h3>
-  <p class="text-secundario  tracking-wide py-2 lg:text-base text-sm">
-    Mi pasión
-    por el desarrollo web comenzó en la universidad en el año 2023. Desde
-    entonces, me he dedicado a explorar y aprender sobre este fascinante mundo.
-    El camino de mi aprendizaje no ha sido fácil, ya que la mayor parte de mis
-    conocimientos los he adquirido de forma autodidacta, invirtiendo tiempo y
-    esfuerzo en investigar y practicar por mi cuenta.
+---
+const spanEstilo = "text-yellow-200";
+---
+
+<div
+  class="row-span-6 col-span-3 break-words border-1 border-gray-600 bg-transparent/35 p-5 rounded-lg space-y-1 group"
+>
+  <h3 class="text-white font-black uppercase text-lg">Informacion Extra</h3>
+  <div class="w-full h-60 brightness-90  overflow-hidden rounded-md ">
+    <img
+      class="w-full h-full object-cover group-hover:scale-105 transition-all  duration-700 ease-in-out"
+      src="https://i.blogs.es/799a0e/ydray-mew_27_articuno_45l_hyperx_environment_front/1366_2000.jpeg"
+      alt=""
+    />
+  </div>
+  <p class="text-secundario tracking-wide py-2 text-[15px] ">
+    Mi pasión por el <span class={spanEstilo}>desarrollo web</span> comenzó en el
+    año <span class={spanEstilo}>2023</span>. Desde entonces, me he dedicado a <span
+      class={spanEstilo}>explorar</span
+    > y <span class={spanEstilo}>aprender</span>, adquiriendo conocimientos de
+    forma <span class={spanEstilo}>autodidacta</span>.
   </p>
 </div>

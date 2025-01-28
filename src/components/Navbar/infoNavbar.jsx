@@ -9,7 +9,7 @@ export function InfoNavbar( {OpenInfo} ) {
           </a>
         </li>
         <li>
-          <a href="/" className="hover:text-yellow-300">
+          <a href="/AboutSection" className="hover:text-yellow-300">
             Sobre mí
           </a>
         </li>

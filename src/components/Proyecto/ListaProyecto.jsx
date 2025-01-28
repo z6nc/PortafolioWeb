@@ -3,12 +3,12 @@ import { IconoRenderizado } from "../iconos";
 export function ListaProyecto({ Proyectos , limit}) {
   return (
     <>
-      <section className="text-white flex flex-wrap gap-6 justify-center items-center font-Montserrat ">
+      <section className="text-white flex flex-wrap gap-6 justify-center items-center font-Montserrat  ">
         {Proyectos.slice(0,limit).map((proyecto) => (
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
-            className="rounded-xl flex flex-col bg-white/5 w-[350px] 2xl:w-[480px] overflow-hidden h-[500px] "
+            className="rounded-xl flex flex-col  w-[350px] 2xl:w-[480px] overflow-hidden h-[500px] bg-transparent/20 shadow-sm shadow-white/25"
           >
             {/* Imagen / video de los proyectos  */}
             <div className=" w-full h-64   rounded-md ">
