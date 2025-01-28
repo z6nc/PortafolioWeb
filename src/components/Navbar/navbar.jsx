@@ -39,7 +39,7 @@ export function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/#C-Proyectos" className="hover:text-yellow-300">
+          <a href="/ListaCertificados" className="hover:text-yellow-300">
             Certificados
           </a>
         </li>
