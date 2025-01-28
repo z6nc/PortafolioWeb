@@ -13,7 +13,7 @@ export function ProjectTechnologies({ listTecnologies, webSite }) {
           </div>
           <ul className="flex  flex-wrap   gap-3 cursor-default">
             {listTecnologies.map((tecnologia, index) => (
-              <li key={index} className=" text-gray-300 inline-flex space-x-2 items-center   px-3   bg-transparent/35 p-2 rounded-lg border-1 border-yellow-400/50 ">
+              <li key={index} className=" text-gray-300 inline-flex space-x-2 items-center   px-3   bg-transparent/35 p-2 rounded-lg border-1 border-gray-600 ">
                 <p className="text-xs">{tecnologia}</p>
                 <IconoRenderizado nombre={tecnologia} className={"size-4"} />
               </li>

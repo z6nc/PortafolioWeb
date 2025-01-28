@@ -1,4 +1,5 @@
 export function ComCertificado({ Certificaciones, limit }) {
+  
   return (
     <section className="flex flex-wrap  gap-3 items-center justify-center  text-white max-w-6xl mx-auto">
       {Certificaciones.slice(0, limit).map((certificacion, index) => (

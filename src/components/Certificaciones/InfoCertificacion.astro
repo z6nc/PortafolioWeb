@@ -1,8 +1,10 @@
 ---
 import { certifications } from "./certificaciones.js";
 import { IconCertificacion } from "../icon/iconCertificacion";
-import {ComCertificado} from "./pageCerti";
+import { ComCertificado } from "./pageCerti";
+import { ButtonUrl } from "../ComButton/buttonUrl";
 ---
+
 <section
   class="font-Montserrat flex flex-col gap-y-9 items-center justify-center"
 >
@@ -10,8 +12,8 @@ import {ComCertificado} from "./pageCerti";
     <IconCertificacion styleIcon={"size-7 hidden lg:block "} />
     <h2 class="text-2xl font-black">CERTIFICACIONES</h2>
   </div>
-  
-  <!-- Inforamcion Trabajo -->
-  <ComCertificado  Certificaciones = {certifications} , limit={4}/>
-  
+
+  <ComCertificado Certificaciones={certifications} , limit={4} />
+
+  <ButtonUrl url={"/ListaCertificados"} text={"Ver mas certificaciones"} />
 </section>

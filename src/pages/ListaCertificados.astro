@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Navbar } from "../components/Navbar/navbar";
+import Footer from "../components/footer.astro";
+import { IconCertificacion } from "../components/icon/iconCertificacion";
+import { CertificacionesFilter } from "../components/Certificaciones/cetificacionLista";
+---
+
+<Layout title=" MisProyectos | Andres Velasquez ">
+  <header class="relative">
+    <Navbar client:idle />
+    <main class="mx-auto px-6 lg:px-24 lg:mt-16 lg:pb-24">
+      <div class=" w-full inline-flex items-center justify-center  gap-2  text-center text-white">
+        <IconCertificacion styleIcon={"size-7 hidden lg:block "} />
+        <h2 class="text-2xl font-black ">CERTIFICACIONES</h2>
+      </div>
+      <section class="flex flex-col gap-y-5">
+        <CertificacionesFilter empresa={"Alura Latam"} />
+        <CertificacionesFilter empresa={"HackerMentor"} />
+      </section>
+    
+
+
+    </main>
+  </header>
+  <Footer />
+</Layout>
