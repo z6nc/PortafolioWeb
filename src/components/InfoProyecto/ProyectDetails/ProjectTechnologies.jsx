@@ -7,7 +7,7 @@ export function ProjectTechnologies({ listTecnologies, webSite }) {
         <article className="flex flex-col gap-4 lg:items-center lg:border-r-1  ">
           <div className="inline-flex items-center gap-2 ">
             <IconTech estiloIcon={"size-6"} />
-            <h4 className="text-white text-lg lg:text-xl font-bold  ">
+            <h4 className="text-white text-lg  font-black  ">
               TECNOLOGIAS
             </h4>
           </div>
@@ -24,7 +24,7 @@ export function ProjectTechnologies({ listTecnologies, webSite }) {
         <article className="flex flex-col gap-4    lg:items-center  ">
           <div className="inline-flex gap-2 items-center ">
             <IconWebsite estiloIcon={"size-6"} />
-            <h4 className="text-white text-lg lg:text-xl  font-bold ">
+            <h4 className="text-white text-lg  font-black ">
               WEBSITE
             </h4>
           </div>

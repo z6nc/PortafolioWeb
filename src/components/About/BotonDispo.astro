@@ -2,18 +2,22 @@
 import {IconDowld} from '../icon/IconDowld'
 ---
 
-<div class="flex flex-wrap gap-4 justify-center text-sm">
+<div class="flex flex-wrap justify-center gap-4  text-sm">
   <a
     href=" "
-    class="relative text-white py-3 w-60 rounded-full items-center gap-2 border-1 border-gray-700 flex justify-center space-x-2 bg-white/10   "
+    class="relative w-60 flex justify-center items-center gap-2  py-3 space-x-2 rounded-full    text-white border-1 border-gray-700  bg-white/10   "
   >
-    <span class="relative inline-flex rounded-full h-3 w-3 bg-yellow-400 animate-pulse "></span>
-    <span class="">Disponible para trabajar  </span>
+  <div class="relative flex size-3">
+    <span class="relative z-40 inline-flex rounded-full size-3 bg-yellow-400 "></span>
+    <span class="absolute  rounded-full size-3 bg-yellow-300/80 animate-ping "></span>
+  </div>
+
+    <span >Disponible para trabajar  </span>
   </a>
   <a
     href="https://drive.google.com/file/d/1fCs7LR8MMAjCCjiCAC1_PWnGmwiLvAjT/view?usp=sharing"
     target="_blank"
-    class="text-white py-3 w-60 rounded-full flex items-center justify-center gap-2 bg-yellow-400/20 border-1 border-yellow-500 group"
+    class=" w-60 group  flex items-center justify-center gap-2  py-3 rounded-full text-white bg-yellow-400/20 border-1 border-yellow-500 "
   >
    <span class="group-hover:hidden animate-fade-in">Descargar CV</span> 
     <span class="hidden group-hover:block animate-tada "><IconDowld /></span>

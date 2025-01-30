@@ -7,7 +7,7 @@ export function CertificacionesFilter({ empresa }) {
   );
   return (
     <>
-      <section className="w-full">
+      <section className="w-full ">
         <div class="flex items-center justify-center mb-4 py-9">
           <span class="flex-grow border-t-1 border-white/25"></span>
           <h2 class="text-xl uppercase text-white font-bold mx-7">{empresa}</h2>

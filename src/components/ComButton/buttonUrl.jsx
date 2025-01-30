@@ -1,11 +1,10 @@
-const IconClik = ()=>(
+const IconClik = ({estiloIcon})=>(
   <svg
-  xmlns="http://www.w3.org/2000/svg"
   fill="none"
   viewBox="0 0 24 24"
   strokeWidth={1.5}
   stroke="currentColor"
-  className="size-6"
+  className={estiloIcon}
 >
   <path
     strokeLinecap="round"
@@ -23,7 +22,7 @@ export function ButtonUrl({ url, text }) {
       className="inline-flex items-center gap-x-2 font-semibold text-sm text-secundario  bg-yellow-400/20 border-1 border-yellow-500  mx-auto py-2 px-4 rounded-md hover:scale-105 transition-transform duration-100 "
     >
       {text}
-      <IconClik/>
+      <IconClik estiloIcon={"size-6"}/>
      
     </a>
   );

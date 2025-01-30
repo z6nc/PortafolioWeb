@@ -21,7 +21,18 @@ export default {
 				'Titulo' :'1px 6px 1px #686867',
 				'logo' : '1px 7px 20px #f8c006'
 			},
-			
+			keyframes: {
+				ping : {
+					'75%, 100%': {
+						transform: 'scale(2)',
+						opacity: 0
+					}
+				}
+			},
+			animation:{
+				ping: 'ping 1s  ease-in-out infinite'
+			},
+
 			
 		},
 	},

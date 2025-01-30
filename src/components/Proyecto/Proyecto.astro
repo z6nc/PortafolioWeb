@@ -6,10 +6,10 @@ import { ButtonUrl } from '../ComButton/buttonUrl';
 ---
 <section  class="flex flex-col gap-6 ">
     <div class="inline-flex gap-3 items-center text-white justify-center text-center  ">
-        <IconProyect estilo={"size-7 hidden lg:block"} />
+        <IconProyect estilo={"size-7 hidden lg:block fill-yellow-400"} />
         <h2 class="text-2xl font-Montserrat font-black">PROYECTOS PRINCIPALES</h2>
     </div>
     
     <ListaProyecto client:load Proyectos={proyectos} limit={3} />
-    <ButtonUrl  url={"/ListaProyectos"} text={"Ver más"} />
+    <ButtonUrl  url={"/ListaProyectos"} text={"Ver más proyectos"} />
 </section>
