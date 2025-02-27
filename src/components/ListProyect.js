@@ -38,6 +38,17 @@ export const proyectos =
         videoWebm :"https://res.cloudinary.com/dleem7osr/video/upload/v1734912678/CodeMasterIdea_i2meuw.webm",
  
         
+    },
+    {
+        id: 4,
+        nombre: "WeatherNess ",
+        descripcionCorta: "Una aplicación web de clima en tiempo real, desarrollada con Node.js y Express en el backend y un frontend dinámico.",
+        descripcionLarga: "Aplicación web que muestra información meteorológica en tiempo real utilizando una API de clima. Desarrollada con Node.js y Express en el backend, y un frontend dinámico. Obtiene datos como temperatura, condiciones climáticas y pronósticos, presentados de forma clara y moderna.",
+        tecnologias: ["NodeJS", "Express", "HTML", "CSS", "JavaScript"],
+        webSite: "https://github.com/z6nc/WeatherNess",
+        LinkCode: "https://github.com/z6nc/WeatherNess",
+        imagenPortada: "https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoWeatherApp_ncqbj8.mp4",
+        videoWebm :"https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoWeatherApp_ncqbj8.mp4",
     }
     
 

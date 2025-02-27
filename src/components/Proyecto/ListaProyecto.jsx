@@ -41,7 +41,7 @@ export function ListaProyecto({ Proyectos , limit}) {
 
                   <ul className="flex items-center gap-3 flex-wrap">
                     {proyecto.tecnologias.map((tecnologia , idx) => (
-                      <li  key={idx} className="text-xs text-gray-300 inline-flex space-x-2 items-center   px-3   bg-transparent/35 p-2 rounded-lg border-1 border-gray-700 ">
+                      <li  key={idx} className="text-xs text-gray-300 inline-flex  space-x-2 items-center   px-3   bg-transparent/35 p-2 rounded-lg border-1 border-gray-700 ">
                         <p>{tecnologia}</p>
                         <IconoRenderizado nombre={tecnologia}  className={"size-4"} />
                       </li>

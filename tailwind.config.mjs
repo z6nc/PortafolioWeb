@@ -30,7 +30,7 @@ export default {
 				}
 			},
 			animation:{
-				ping: 'ping 1s  ease-in-out infinite'
+				ping: 'ping 1.1s  ease-in-out infinite'
 			},
 
 			
