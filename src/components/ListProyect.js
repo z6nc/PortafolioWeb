@@ -8,8 +8,8 @@ export const proyectos =
         tecnologias: ["Astro", "React", "TailwindCSS"],
         webSite: "https://web-drinks-shop.vercel.app",
         LinkCode: "https://github.com/z6nc/Web-DrinksShop",
-        imagenPortada:"https://res.cloudinary.com/dleem7osr/video/upload/v1734622001/VideoEnergix_dhdpln.mp4",
-        videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1734912357/VideoEnergix_dhdpln_ga2rjj.webm",
+        imagenPortada:"https://res.cloudinary.com/dleem7osr/image/upload/v1743379424/portadaDrink_k8czdg.webp",
+        videoWebm:"https://res.cloudinary.com/dleem7osr/video/upload/v1734622001/VideoEnergix_dhdpln.mp4",
 
     },
     
@@ -21,8 +21,8 @@ export const proyectos =
         tecnologias: ["Astro", "JavaScript", "TailwindCSS"],
         webSite: "https://lab-inspira.vercel.app",
         LinkCode: "https://github.com/z6nc/LabInspira",
-        imagenPortada: "https://res.cloudinary.com/dleem7osr/video/upload/v1733164116/20241202-1826-54.7084419_qhwbhv.mp4",
-        videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1734912630/LaboIdeas_trnkbx.webm",
+        imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1743379424/portadaMiniJuegos_p6zzhc.webp",
+        videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1733164116/20241202-1826-54.7084419_qhwbhv.mp4",
      
     },
     
@@ -34,8 +34,8 @@ export const proyectos =
         tecnologias: ["Astro", "JavaScript", "TailwindCSS"],
         webSite: "https://code-master-js.vercel.app",
         LinkCode: "https://github.com/z6nc/CodeMasterJS",
-        imagenPortada: "https://res.cloudinary.com/dleem7osr/video/upload/v1733163556/20241202-1817-39.8365737_zrt77x.mp4",
-        videoWebm :"https://res.cloudinary.com/dleem7osr/video/upload/v1734912678/CodeMasterIdea_i2meuw.webm",
+        imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1743379424/portadaJS_aa2ber.webp",
+        videoWebm :"https://res.cloudinary.com/dleem7osr/video/upload/v1733163556/20241202-1817-39.8365737_zrt77x.mp4",
  
         
     },
@@ -47,7 +47,7 @@ export const proyectos =
         tecnologias: ["NodeJS", "Express", "HTML", "CSS", "JavaScript"],
         webSite: "https://github.com/z6nc/WeatherNess",
         LinkCode: "https://github.com/z6nc/WeatherNess",
-        imagenPortada: "https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoWeatherApp_ncqbj8.mp4",
+        imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1743379424/portadaWeather_g7and4.webp",
         videoWebm :"https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoWeatherApp_ncqbj8.mp4",
     }
     

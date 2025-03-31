@@ -3,30 +3,16 @@ import { IconoRenderizado } from "../iconos";
 export function ListaProyecto({ Proyectos , limit}) {
   return (
     <>
-      <section className="text-white flex flex-wrap gap-6 justify-center items-center  ">
+      <section className=" flex flex-wrap gap-6 justify-center items-center  ">
         {Proyectos.slice(0,limit).map((proyecto) => (
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
-            className="rounded-xl flex flex-col  w-[350px] 2xl:w-[480px] overflow-hidden h-[500px] bg-transparent/20 shadow-sm shadow-white/25 animate-bounce-fade-in"
+            className="rounded-xl flex flex-col group  w-[350px] 2xl:w-[480px]  h-[500px] bg-transparent/20 shadow-sm shadow-white/25 animate-bounce-fade-in"
           >
             {/* Imagen / video de los proyectos  */}
-            <div className=" w-full h-64   rounded-md ">
-              <video
-                src={proyecto.imagenPortada}
-                className="object-cover w-full h-full brightness-[0.9]"
-                autoPlay  
-                muted 
-                loop
-              >
-                {proyecto.imagenPortada && (
-                  <source src={proyecto.imagenPortada} type="video/mp4" />
-                )}
-                {proyecto.videoWebm && (
-                  <source src={proyecto.videoWebm} type="video/webm" />
-                )}
-                <p>Tu navegador no soporta videos.</p>
-              </video>             
+            <div className=" w-full h-64  bg-black relative  rounded-md  ">
+              <img className="w-full h-full object-cover absolute inset-0 group-hover:scale-125 transition-all duration-100 ease-linear" src={proyecto.imagenPortada} alt={`imagen de la web ${proyecto.nombre}`} />
             </div>
             
             {/* componentes de informacion  */}

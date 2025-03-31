@@ -1,21 +1,8 @@
-import React, { useRef, useState } from "react";
 import { IconPlay } from "../icon/iconPlay";
-
+import { useVideoPlay } from "../../hook/usePlayVideo";
 
 export function VideoProyecto({ linkVideoMp4, linkVideoWebm }) {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
-
-  const handlePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
+  const { videoRef, isPlaying, togglePlayPause } = useVideoPlay();
 
   return (
     <div className="w-full h-[30vh] lg:h-auto lg:animate-flip-in-y relative">
@@ -26,13 +13,12 @@ export function VideoProyecto({ linkVideoMp4, linkVideoWebm }) {
         autoPlay
         muted
       >
-        {linkVideoMp4 && <source src={linkVideoMp4} type="video/mp4" />}
         {linkVideoWebm && <source src={linkVideoWebm} type="video/webm" />}
         <p>Tu navegador no soporta videos.</p>
       </video>
 
       <button
-        onClick={handlePlayPause}
+        onClick={togglePlayPause}
         className="  bg-transparent text-white rounded absolute inset-0 hidden lg:block"
       >
         {!isPlaying && (
