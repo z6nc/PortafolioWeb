@@ -30,7 +30,7 @@ export function ProyectInfo() {
           <section className="text-secundario flex flex-col gap-6 justify-center animate-blurred-fade-in  ">
             <TituloProyecto NombreProyecto={proyecto.nombre}  LinkGithub = {proyecto.LinkCode}/>
             <section className="flex flex-wrap items-center gap-5 ">
-              <VideoProyecto linkVideoMp4={proyecto.videoMp4} linkVideoWebm={proyecto.videoWebm} />
+              <VideoProyecto  linkVideoWebm={proyecto.videoWebm} />
               <ProjectDetails Descripcion={proyecto.descripcionLarga} Tecnologias={proyecto.tecnologias} WebSiteLink={proyecto.webSite} />
              
             </section>

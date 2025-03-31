@@ -1,7 +1,7 @@
 import { IconPlay } from "../icon/iconPlay";
 import { useVideoPlay } from "../../hook/usePlayVideo";
 
-export function VideoProyecto({ linkVideoMp4, linkVideoWebm }) {
+export function VideoProyecto({  linkVideoWebm }) {
   const { videoRef, isPlaying, togglePlayPause } = useVideoPlay();
 
   return (
