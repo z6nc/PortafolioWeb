@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Navbar } from "../components/Navbar/navbar";
-import Footer from "../components/footer.astro";
+import Footer from '../components/Footer/footer.astro';
 import { IconCertificacion } from "../components/icon/iconCertificacion";
 import { CertificacionesFilter } from "../components/Certificaciones/cetificacionLista";
+import {CertificadoLugares} from "../data/CertificadoLugares.js"
+
 ---
 
 <Layout title=" MisProyectos | Andres Velasquez ">
@@ -15,8 +17,9 @@ import { CertificacionesFilter } from "../components/Certificaciones/cetificacio
         <h2 class="text-2xl font-black ">CERTIFICACIONES</h2>
       </div>
       <section class="flex flex-col gap-y-5">
-        <CertificacionesFilter empresa={"Alura Latam"} />
-        <CertificacionesFilter empresa={"HackerMentor"} />
+        {CertificadoLugares.map((c) => (
+          <CertificacionesFilter empresa={c} />
+        ))}
       </section>
     
 

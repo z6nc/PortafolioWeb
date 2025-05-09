@@ -1,21 +1,18 @@
 import { IconoRenderizado } from "../iconos";
+import { ImagenCustom } from "../common/ImagenCustom";
 
 export function ListaProyecto({ Proyectos , limit}) {
   return (
     <>
       <section className=" flex flex-wrap gap-6 justify-center items-center  ">
-        {Proyectos.slice(0,limit).map((proyecto) => (
+        {Proyectos.slice(0,limit).reverse().map((proyecto) => (
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
             className="rounded-xl flex flex-col group  w-[350px] 2xl:w-[480px]  h-[500px] bg-transparent/20 shadow-sm shadow-white/25 animate-bounce-fade-in"
           >
-            {/* Imagen / video de los proyectos  */}
-            <div className=" w-full h-64  bg-black relative  rounded-md  ">
-              <img className="w-full h-full object-cover absolute inset-0 group-hover:scale-125 transition-all duration-100 ease-linear" src={proyecto.imagenPortada} alt={`imagen de la web ${proyecto.nombre}`} />
-            </div>
+            <ImagenCustom imagenPortada={proyecto.imagenPortada}  nombre={proyecto.nombre}/>
             
-            {/* componentes de informacion  */}
             <div className=" px-5  py-6 ">
                 <div className=" flex flex-col gap-2  ">
                   <h1 className="text-white text-xl  font-bold  ">

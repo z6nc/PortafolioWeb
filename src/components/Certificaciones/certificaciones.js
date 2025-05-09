@@ -5,16 +5,9 @@ const LOGOS = {
   };
   
   export const certifications = [
+   
     {
       id: 1,
-      company: "HackerMentor",
-      year: 2022,
-      description: "Curso Gratuito Hacking ético Gamificado HACKLAB",
-      logo: LOGOS.HackerMentor,
-      url: "https://credsverse.com/credentials/6cb67551-cae9-426f-a1a1-2c7a11df693a",
-    },
-    {
-      id: 2,
       company: "Alura Latam",
       year: 2025,
       description: "Lógica de programación: sumérgete en la programación con JavaScript",
@@ -22,7 +15,7 @@ const LOGOS = {
       url: "https://app.aluracursos.com/certificate/1c33041b-2532-4fe9-a942-aad3e3416d3c",
     },
     {
-      id: 3,
+      id: 2,
       company: "Alura Latam",
       year: 2025,
       description: "Practicando Lógica de Programación: Challenge Amigo secreto",
@@ -30,12 +23,47 @@ const LOGOS = {
       url: "https://z6nc.github.io/Challenge-AmigoSecreto/",
     },
     {
-      id: 4,
+      id: 3,
       company: "Alura Latam",
       year: 2025,
       description: "Git y GitHub: repositorio, commit y versiones",
       logo: LOGOS.AluraLatam,
       url: "https://app.aluracursos.com/certificate/6b5ab413-b6e9-4782-9462-f889055daf19",
     },
+    {
+      id: 4,
+      company: "HackerMentor",
+      year: 2022,
+      description: "Curso Gratuito Hacking ético Gamificado HACKLAB",
+      logo: LOGOS.HackerMentor,
+      url: "https://credsverse.com/credentials/6cb67551-cae9-426f-a1a1-2c7a11df693a",
+    },
+    {
+      id:5,
+      company:"Alura Latam",
+      year : 2025 ,
+      description :"HTML y CSS: ambientes de desarrollo, estructura de archivos y tags",
+      logo: LOGOS.AluraLatam,
+      url :"https://app.aluracursos.com/certificate/8eb32dc9-8879-4e3e-afdc-1eae5c86f444"
+
+    },
+      {
+      id:6,
+      company:"Alura Latam",
+      year : 2025 ,
+      description :"HTML y CSS: header, footer y variables CSS",
+      logo: LOGOS.AluraLatam,
+      url :"https://app.aluracursos.com/certificate/1efa5a8e-2d80-4f07-b96b-63787b7f5111"
+
+    },
+     {
+      id:7,
+      company:"Alura Latam",
+      year : 2025 ,
+      description :"Python para Data Science: primeros pasos",
+      logo: LOGOS.AluraLatam,
+      url :"https://app.aluracursos.com/certificate/a62222a0-80f6-435e-bdaa-69409198f0c6"
+
+    }
   ];
   
