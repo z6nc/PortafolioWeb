@@ -1,11 +1,11 @@
 export function ComCertificado({ Certificaciones, limit }) {
   
   return (
-    <section className="flex flex-wrap  gap-3 items-center justify-center  text-white max-w-6xl mx-auto">
+    <section className="flex flex-wrap  gap-3 items-center justify-center  text-white max-w-6xl mx-auto animate-bounce-fade-in">
       {Certificaciones.slice(0, limit).map((certificacion, index) => (
         <a
           key={index}
-          className="flex gap-x-4  justify-center rounded-lg px-5 py-6  bg-transparent/20 border-1 border-gray-500 shadow-lg overflow-hidden animate-bounce-fade-in"
+          className="flex gap-x-4  justify-center rounded-lg px-5 py-6  bg-transparent/20 border-1 border-gray-500 shadow-lg overflow-hidden"
           href={certificacion.url}
           target="_blank"
         >

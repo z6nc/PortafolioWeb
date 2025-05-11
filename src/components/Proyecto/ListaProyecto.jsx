@@ -9,7 +9,7 @@ export function ListaProyecto({ Proyectos , limit}) {
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
-            className="rounded-xl flex flex-col group  w-[350px] 2xl:w-[480px]  h-[500px] bg-transparent/20 shadow-sm shadow-white/25 animate-bounce-fade-in"
+            className=" flex flex-col  group  w-[350px] 2xl:w-[480px]  h-[540px] bg-transparent/20 shadow-sm rounded-xl shadow-white/25 animate-bounce-fade-in"
           >
             <ImagenCustom imagenPortada={proyecto.imagenPortada}  nombre={proyecto.nombre}/>
             
