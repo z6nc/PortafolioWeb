@@ -73,8 +73,8 @@ export const RedesIcon = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 49.4 512 399.4"
        className={style}
       >
-        <g fill="none" fill-rule="evenodd">
-          <g fill-rule="nonzero">
+        <g fill="none" fillRule="evenodd">
+          <g fillRule="nonzero">
             <path
               fill="#4285f4"
               d="M35 449h81V251L0 164v250c0 19 16 35 35 35z"
@@ -91,7 +91,7 @@ export const RedesIcon = [
           <path fill="#ea4335" d="M116 251V100l140 104 140-104v151L256 356z" />
           <path
             fill="#c5221f"
-            fill-rule="nonzero"
+            fillRule="nonzero"
             d="M0 117v47l116 87V100L84 75C49 49 0 74 0 117z"
           />
         </g>
