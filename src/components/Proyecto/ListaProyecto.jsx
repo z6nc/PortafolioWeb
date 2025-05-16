@@ -5,7 +5,7 @@ export function ListaProyecto({ Proyectos , limit}) {
   return (
     <>
       <section className=" flex flex-wrap gap-6 justify-center items-center  ">
-        {Proyectos.slice(0,limit).reverse().map((proyecto) => (
+        {Proyectos.toReversed().slice(0,limit).map((proyecto) => (
           <a
             href={`/InfoProye?id=${proyecto.id}`}
             key={proyecto.id}
