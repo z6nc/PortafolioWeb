@@ -56,7 +56,7 @@ export const proyectos =
             descripcionCorta: "Plataforma web interactiva para aprender quechua con lecciones modulares, audio nativo y traducción por IA. ",
             descripcionLarga: "Rimayninchik es un proyecto personal de una plataforma web educativa diseñada para facilitar el aprendizaje del quechua. Incluye lecciones modulares, traducción en tiempo real mediante la API de inteligencia artificial Magic Loop, y componentes interactivos que integran audio nativo para reforzar la pronunciación. El diseño es completamente responsive y accesible, adaptándose a cualquier dispositivo. Desarrollado con React, Tailwind CSS, Web Components y React Router, este proyecto fortaleció mis habilidades en frontend, gestión de estado y consumo de APIs",
             tecnologias: ["React", "TailwindCSS", "JavaScript"],
-            webSite: "https://github.com/z6nc/AprendeQuechua",
+            webSite: "https://aprende-quechua.vercel.app/",
             LinkCode: "https://github.com/z6nc/AprendeQuechua",
             imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1747413631/PortadaQuechua_rssdpc.webp",
             videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoquechuaWeb_gpvnba.mp4  ",
