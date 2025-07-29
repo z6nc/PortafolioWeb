@@ -36,8 +36,6 @@ export const proyectos =
             LinkCode: "https://github.com/z6nc/CodeMasterJS",
             imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1746833428/portadaJS_ojwysf.webp",
             videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1733163556/20241202-1817-39.8365737_zrt77x.mp4",
-
-
         },
         {
             id: 4,
@@ -66,9 +64,9 @@ export const proyectos =
             nombre: "VREPLAY",
             descripcionCorta: "Plataforma web que centraliza torneos y partidas del tier 1 de Valorant, desarrollada con TypeScript, React y Tailwind CSS",
             descripcionLarga: "VREPLAY es una plataforma web que recopila y organiza todos los torneos y partidas del nivel competitivo tier 1 del videojuego Valorant. Desarrollada con React y TypeScript, utiliza Tailwind CSS para el diseño, y emplea estructuras de datos eficientes, validaciones tipadas y manejo avanzado de estado. También implementé portales para la gestión dinámica de componentes. Este proyecto me permitió afianzar conocimientos sólidos en desarrollo frontend tipado",
-            tecnologias: ["React","TypeScript" ,"TailwindCSS"],
-            webSite: "https://github.com/z6nc/WeatherNess",
-            LinkCode: "https://github.com/z6nc/WeatherNess",
+            tecnologias: ["React", "TypeScript", "TailwindCSS"],
+            webSite: "https://v-replay.vercel.app/",
+            LinkCode: "https://github.com/z6nc/VReplay",
             imagenPortada: "https://res.cloudinary.com/dleem7osr/image/upload/v1747415703/PortadaVREPLAY01_clgmcs.webp",
             videoWebm: "https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videovreplay01_bhoeju.mp4",
         },
