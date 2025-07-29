@@ -2,6 +2,7 @@
 const LOGOS = {
     HackerMentor: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/3498375/settings_images/a7868b-cf5-c3d-854c-d58ee5dd5be2_HM_000.png",
     AluraLatam: "https://www.aluracursos.com/assets/img/home/alura-logo.1730889068.svg",
+    endless :"https://avatars.githubusercontent.com/u/1930958?s=200&v=4"
   };
   
   export const certifications = [
@@ -63,7 +64,14 @@ const LOGOS = {
       description :"Python para Data Science: primeros pasos",
       logo: LOGOS.AluraLatam,
       url :"https://app.aluracursos.com/certificate/a62222a0-80f6-435e-bdaa-69409198f0c6"
-
+    },
+    {
+      id:8,
+      company:"Endless",
+      year : 2025,
+      description :"Explore: Threadbare: Curso Godot",
+      logo: LOGOS.endless,
+      url:"https://www.linkedin.com/in/andresvelasquezdev/overlay/1753313853335/single-media-viewer/?type=DOCUMENT&profileId=ACoAAEJqioIBcHIJu4kao_-2dQKCjCwfU6A-uiQ"
     }
   ];
   
